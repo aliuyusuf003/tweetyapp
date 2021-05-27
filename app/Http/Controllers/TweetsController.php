@@ -11,6 +11,8 @@ class TweetsController extends Controller
     {
         // $tweets = Tweet::all();
         // $tweets = Tweet::latest()->get();
+
+       
         return view('tweets.index',[
             'tweets' => auth()->user()->timeline()
         ]);
@@ -24,6 +26,8 @@ class TweetsController extends Controller
             'body' =>  $attributes['body']
         ]);
 
-        return redirect('/home');
+        // return redirect('/home');
+        return redirect('/tweets');
+        // return redirect()->route('home');
     }
 }

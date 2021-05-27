@@ -1,7 +1,7 @@
 <div class="border border-blue-400 rounded-lg px-8 py-6 mb-8">
             <form method="POST" action="/tweets">
                 @csrf 
-          <textarea name="body" class="w-full p-4 " placeholder='What is up doc?' ></textarea>
+          <textarea name="body" class="w-full p-4 " placeholder='What is up doc?' required></textarea>
             <hr class="my-4">
             <footer class="flex justify-between items-center">
             <img

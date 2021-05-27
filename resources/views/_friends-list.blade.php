@@ -6,6 +6,7 @@
       <a href="{{route('profile',$user->name)}}" class="flex items-center text-sm">
       <img src="/images/logo.svg" alt="" class="rounded-full mr-4 ">
             <!-- <img src="https://i.pravatar.cc/40?u={{$user->email}}" alt="" class="rounded-full mr-4 "> -->
+            <!-- <img src="{{$user->avatar}}" alt="" class="rounded-full mr-4 "> -->
 
       </a>
       {{$user->name}}

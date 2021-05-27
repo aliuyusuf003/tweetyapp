@@ -1,7 +1,6 @@
-@extends('layouts.app')
+@component('components.master')
 
-@section('content')
-<div class="container">
+<div class="container mx-auto py-4 px-6 bg-gray-400">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -31,9 +30,9 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
+                        <div class="form-group row mb-0 mt-2">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="px-6 py-3 rounded text-sm uppercase bg-blue-600 text-white">
                                     {{ __('Send Password Reset Link') }}
                                 </button>
                             </div>
@@ -44,4 +43,5 @@
         </div>
     </div>
 </div>
-@endsection
+@endcomponent
+
